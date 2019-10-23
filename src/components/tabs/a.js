@@ -4,52 +4,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const styles = {
-    wrapper: {
-        width:'100%',
-        height: '100%',
-        overflow:'hidden',
-    },
-    boxContainer : {
-        width: '35%',
-        height:'100%',
-        float:'left',
-        borderRight: '1px solid #c1c1c1',
-        padding: 40,
-        paddingTop: 80,
-    },
-    boxWrapper: {
-        border: '1px solid #e1e1e1',
-        width: '100%',
-        height:'80%'
-    },
-    board: {
-        width: '65%',
-        height:'100%',
-        float:'right',
-    },
-    board_type : {
-        display:'inline-block',
-        width: '100%',
-        height: '100%',
-
-        // borderRight:'1px solid #d1d1d1',
-    },
-    box1 : {
+    box1: {
         boxSizing: 'border-box',
         minHeight: 100,
         background: '#eee'
     },
-    box2 : {
+    box2: {
         boxSizing: 'border-box',
         minHeight: 100,
         background: '#ddd'
     }
-    // board_accuracy:{
-    //     display:'inline-block',
-    //     width: '40%',
-    //     height: '100%',
-    // }
-
 }
 
 @inject('UiStore', 'AStore')
@@ -61,19 +25,28 @@ export default class FirstTab extends Component {
         return (
             <div className="tab-container">
                 <div style={styles.wrapper}>
-                    <div style={styles.boxContainer}>
-                        <div style={styles.boxWrapper}>
+                    <div className="col-md-5 col-sm-12 board-left">
+                        <div>
                             이미지
                         </div>
                     </div>
-                    <div style={styles.board}>
-                        <div style={styles.board_type}>
+
+                    <div className="col-md-7">
+                        <div>
                             <div className={"col-md-12"}>
-                                <div className={"col-md-3"} style={styles.box1}>
-
+                                <div className={"col-md-5 col-sm-12"} style={styles.box1}>
+                                    이미지
                                 </div>
-                                <div className={"col-md-8"} style={styles.box2}>
-
+                                <div className={"col-md-7 col-sm-12"} style={styles.box2}>
+                                    예측정확도
+                                </div>
+                            </div>
+                            <div className={"col-md-12 col-sm-12"}>
+                                <div className={"col-md-5 col-sm-12"} style={styles.box1}>
+                                    이미지
+                                </div>
+                                <div className={"col-md-7 col-sm-12"} style={styles.box2}>
+                                    예측정확도
                                 </div>
                             </div>
                         </div>

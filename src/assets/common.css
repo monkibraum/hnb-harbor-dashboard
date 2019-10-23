@@ -9,6 +9,12 @@ body {
     margin-top: 10px;
     padding: 0;
 }
-.tab-container {
-    height: calc( 100vh - 49px );
+.board-left{
+    border-right: 1px solid #eee;
+    min-height: 500px;
+    padding: 15px;
+}
+.board-left > div{
+    border: 1px solid #eee;
+    min-height: 500px;
 }
