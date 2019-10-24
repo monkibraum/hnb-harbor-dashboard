@@ -10,11 +10,76 @@ body {
     padding: 0;
 }
 .board-left{
-    border-right: 1px solid #eee;
-    min-height: 500px;
-    padding: 15px;
+    border-right: 1px solid #c1c1c1;
+    min-height: 800px;
+    padding: 30px;
 }
+
 .board-left > div{
     border: 1px solid #eee;
-    min-height: 500px;
+    /* min-height: 800px; */
+    background: #999
+}
+.board-left > div > img {
+    width: 100%;
+    /* max-height: 150px; */
+}
+.board-left .square{
+    position:relative;
+    display:inline-block;
+    width: 50%
+}
+.board-right .square{
+    display:inline-block;
+    width: 50%;
+    border: '1px solid #d1d1d1';
+    min-height:200px;
+}
+.board-right .square~ul{
+    display: inline-block;
+    list-style : none;
+}
+.board-right .square~ul li{
+    font-size: 20px;
+    margin-bottom:20px;
+}
+.square .image-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font-size: 23px;
+    padding-left: 10px;
+}
+.board-right{
+    padding: 30px;
+}
+
+.column1 {
+    box-sizing: border-box;
+    /* min-height: 150px; */
+    background: #eee;
+}
+.column2 {
+    box-sizing: border-box;
+    /* min-height: 150px; */
+    background: #ddd;
+}
+.column1 > span {
+    display: inline-block;
+    width: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.column1 > div {
+    display: inline-block;
+    width : calc( 100% - 37px );
+}
+.column1 > div >img {
+    width: 100%;
+    max-height: 150px;
 }

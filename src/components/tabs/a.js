@@ -1,20 +1,9 @@
 import React, { Component } from 'react'
 import { observer, inject } from 'mobx-react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import boundingBox from 'assets/img/boundingBox.png'
+import typeA from 'assets/img/typeA.png';
 
-
-const styles = {
-    box1: {
-        boxSizing: 'border-box',
-        minHeight: 100,
-        background: '#eee'
-    },
-    box2: {
-        boxSizing: 'border-box',
-        minHeight: 100,
-        background: '#ddd'
-    }
-}
 
 @inject('UiStore', 'AStore')
 @observer
@@ -24,30 +13,67 @@ export default class FirstTab extends Component {
         const { UiStore, AStore } = this.props;
         return (
             <div className="tab-container">
-                <div style={styles.wrapper}>
+                <div>
                     <div className="col-md-5 col-sm-12 board-left">
                         <div>
-                            이미지
+                            <img src={boundingBox}/>
                         </div>
                     </div>
 
-                    <div className="col-md-7">
-                        <div>
-                            <div className={"col-md-12"}>
-                                <div className={"col-md-5 col-sm-12"} style={styles.box1}>
-                                    이미지
-                                </div>
-                                <div className={"col-md-7 col-sm-12"} style={styles.box2}>
-                                    예측정확도
+                    <div className="col-md-7 col-sm-12 board-right" >
+                        <div className={"col-md-12 col-sm-12"} style={{marginBottom:15}}>
+                            <div className={"col-md-6 col-sm-12 column1"} >
+                                <span>A</span>
+                                <div>
+                                    <img src={typeA}/>
                                 </div>
                             </div>
-                            <div className={"col-md-12 col-sm-12"}>
-                                <div className={"col-md-5 col-sm-12"} style={styles.box1}>
-                                    이미지
+                            <div className={"col-md-6 col-sm-12 column2"} >
+
+                            </div>
+                        </div>
+                        <div className={"col-md-12 col-sm-12"} style={{marginBottom:15}}>
+                            <div className={"col-md-6 col-sm-12 column1"} >
+                                <span>B</span>    
+                                <div>
+                                    <img src={typeA}/>
                                 </div>
-                                <div className={"col-md-7 col-sm-12"} style={styles.box2}>
-                                    예측정확도
+                            </div>
+                            <div className={"col-md-6 col-sm-12 column2"} >
+
+                            </div>
+                        </div>
+                        <div className={"col-md-12 col-sm-12"} style={{marginBottom:15}}>
+                            <div className={"col-md-6 col-sm-12 column1"} >
+                                <span>C</span>    
+                                <div>
+                                    <img src={typeA}/>
                                 </div>
+                            </div>
+                            <div className={"col-md-6 col-sm-12 column2"} >
+
+                            </div>
+                        </div>
+                        <div className={"col-md-12 col-sm-12"} style={{marginBottom:15}}>
+                            <div className={"col-md-6 col-sm-12 column1"} >
+                                <span>D</span>    
+                                <div>
+                                    <img src={typeA}/>
+                                </div>
+                            </div>
+                            <div className={"col-md-6 col-sm-12 column2"} >
+
+                            </div>
+                        </div>
+                        <div className={"col-md-12 col-sm-12"} style={{marginBottom:15}}>
+                            <div className={"col-md-6 col-sm-12 column1"} >
+                                <span>E</span>    
+                                <div>
+                                    <img src={typeA}/>
+                                </div>
+                            </div>
+                            <div className={"col-md-6 col-sm-12 column2"} >
+
                             </div>
                         </div>
                         {/* <div style={styles.board_accuracy}>
