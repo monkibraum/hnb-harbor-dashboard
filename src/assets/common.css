@@ -9,6 +9,14 @@ body {
     margin-top: 10px;
     padding: 0;
 }
+.tab-container{
+    /* width: 1400px;
+    margin: auto; */
+}
+.tab-container h4{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 .board-left{
     border-right: 1px solid #c1c1c1;
     min-height: 800px;
@@ -39,9 +47,16 @@ body {
     display: inline-block;
     list-style : none;
 }
-.board-right .square~ul li{
-    font-size: 20px;
-    margin-bottom:20px;
+.board-right .square~ul li {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.board-right .square~ul label {
+    padding-right: 25px;
+    border-right: 1px solid #c1c1c1;
+}
+.board-right .square~ul span {
+    padding-left: 25px;
 }
 .square .image-label{
     position: absolute;
@@ -57,11 +72,16 @@ body {
 .board-right{
     padding: 30px;
 }
+.type-row {
+    border: 1px solid #c1c1c1;
+    padding: 0;
+}
 
 .column1 {
     box-sizing: border-box;
     /* min-height: 150px; */
     background: #eee;
+    padding: 0;
 }
 .column2 {
     box-sizing: border-box;
@@ -73,13 +93,35 @@ body {
     width: 20px;
     font-size: 30px;
     font-weight: bold;
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .column1 > div {
     display: inline-block;
-    width : calc( 100% - 37px );
+    width: calc( 100% - 60px );
 }
 .column1 > div >img {
     width: 100%;
     max-height: 150px;
 }
+
+.table-wrapper{
+    float: right;
+    display: inline-block;
+    width: 50%;
+}
+
+.table-wrapper tbody {
+    font-size: 20px;
+}
+.table-wrapper td, .table-wrapper th {
+    height: 50px;
+    line-height : 50px;
+    width: 50%
+}
+.c-container {
+    width: 1300px;
+    margin: auto;
+    padding-top: 100px;
+}
+
